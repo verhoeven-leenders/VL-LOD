@@ -8,5 +8,9 @@ The following ontologies will be used as a base for the data model:
 
 The application will most likely be built in Python using [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell).
 
+## UML Schema
+
+![Image of VL-LOD Schema in UML](../master/UML/VL_LOD.uml.png "VL-LOD Schema in UML")
+
 ## License
 The information in this repository is available for use under [MIT License](../master/LICENSE).
