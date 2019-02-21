@@ -1,106 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_kv26EBWLEem_cfaprD3REA" name="vl_lod">
-  <eAnnotations xmi:id="_kv26ERWLEem_cfaprD3REA" source="Objing">
-    <contents xmi:type="uml:Property" xmi:id="_kv26EhWLEem_cfaprD3REA" name="exporterVersion">
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_kv26ExWLEem_cfaprD3REA" value="3.0.0"/>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_YM8SADXKEema9Zj0X6zhUw" name="vl_lod">
+  <eAnnotations xmi:id="_YM8SATXKEema9Zj0X6zhUw" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_YM8SAjXKEema9Zj0X6zhUw" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_YM8SAzXKEema9Zj0X6zhUw" value="3.0.0"/>
     </contents>
   </eAnnotations>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26FBWLEem_cfaprD3REA" name="Assembly">
-    <ownedAttribute xmi:id="_kv26FRWLEem_cfaprD3REA" name="Contains" visibility="public" type="_kv26FBWLEem_cfaprD3REA" association="_kv26HhWLEem_cfaprD3REA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kv26FhWLEem_cfaprD3REA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26FxWLEem_cfaprD3REA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SBDXKEema9Zj0X6zhUw" name="Assembly">
+    <generalization xmi:id="_YM8SBTXKEema9Zj0X6zhUw" general="_YM8SIDXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_YM8SBjXKEema9Zj0X6zhUw" name="Contains" visibility="public" type="_YM8SBDXKEema9Zj0X6zhUw" association="_YM8SDzXKEema9Zj0X6zhUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SBzXKEema9Zj0X6zhUw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SCDXKEema9Zj0X6zhUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26GBWLEem_cfaprD3REA" name="PartOf" visibility="public" type="_kv26FBWLEem_cfaprD3REA" association="_kv26HhWLEem_cfaprD3REA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kv26GRWLEem_cfaprD3REA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26GhWLEem_cfaprD3REA"/>
+    <ownedAttribute xmi:id="_YM8SCTXKEema9Zj0X6zhUw" name="PartOfAssembly" visibility="public" type="_YM8SBDXKEema9Zj0X6zhUw" association="_YM8SDzXKEema9Zj0X6zhUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SCjXKEema9Zj0X6zhUw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SCzXKEema9Zj0X6zhUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26GxWLEem_cfaprD3REA" name="Contains" visibility="public" type="_kv26IBWLEem_cfaprD3REA" association="_kv26HxWLEem_cfaprD3REA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kv26HBWLEem_cfaprD3REA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26HRWLEem_cfaprD3REA"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26HhWLEem_cfaprD3REA" memberEnd="_kv26FRWLEem_cfaprD3REA _kv26GBWLEem_cfaprD3REA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26HxWLEem_cfaprD3REA" memberEnd="_kv26GxWLEem_cfaprD3REA _kv26IRWLEem_cfaprD3REA"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26IBWLEem_cfaprD3REA" name="Part">
-    <ownedAttribute xmi:id="_kv26IRWLEem_cfaprD3REA" name="PartOf" visibility="public" type="_kv26FBWLEem_cfaprD3REA" association="_kv26HxWLEem_cfaprD3REA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kv26IhWLEem_cfaprD3REA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26IxWLEem_cfaprD3REA"/>
+    <ownedAttribute xmi:id="_YM8SDDXKEema9Zj0X6zhUw" name="Contains" visibility="public" type="_YM8SETXKEema9Zj0X6zhUw" association="_YM8SEDXKEema9Zj0X6zhUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SDTXKEema9Zj0X6zhUw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SDjXKEema9Zj0X6zhUw"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26JBWLEem_cfaprD3REA" name="FileRepresentation">
-    <ownedComment xmi:id="_kv26JRWLEem_cfaprD3REA">
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SDzXKEema9Zj0X6zhUw" memberEnd="_YM8SBjXKEema9Zj0X6zhUw _YM8SCTXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SEDXKEema9Zj0X6zhUw" memberEnd="_YM8SDDXKEema9Zj0X6zhUw _YM8SEzXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SETXKEema9Zj0X6zhUw" name="Part">
+    <generalization xmi:id="_YM8SEjXKEema9Zj0X6zhUw" general="_YM8SIDXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_YM8SEzXKEema9Zj0X6zhUw" name="PartOfAssembly" visibility="public" type="_YM8SBDXKEema9Zj0X6zhUw" association="_YM8SEDXKEema9Zj0X6zhUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SFDXKEema9Zj0X6zhUw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SFTXKEema9Zj0X6zhUw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SFjXKEema9Zj0X6zhUw" name="FileRepresentation">
+    <ownedComment xmi:id="_YM8SFzXKEema9Zj0X6zhUw">
       <body>Test</body>
     </ownedComment>
-    <generalization xmi:id="_kv26JhWLEem_cfaprD3REA" general="_kv26RhWLEem_cfaprD3REA"/>
-    <ownedAttribute xmi:id="_kv26JxWLEem_cfaprD3REA" name="filePath" visibility="public" type="_kv26SBWLEem_cfaprD3REA" association="_kv26KhWLEem_cfaprD3REA"/>
-    <ownedAttribute xmi:id="_kv26KBWLEem_cfaprD3REA" name="GUID" visibility="public" type="_kv26SRWLEem_cfaprD3REA" association="_kv26LBWLEem_cfaprD3REA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26KRWLEem_cfaprD3REA"/>
+    <generalization xmi:id="_YM8SGDXKEema9Zj0X6zhUw" general="_YM8SNjXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_YM8SGTXKEema9Zj0X6zhUw" name="filePath" visibility="public" type="_YM8SODXKEema9Zj0X6zhUw" association="_YM8SHDXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_YM8SGjXKEema9Zj0X6zhUw" name="GUID" visibility="public" type="_YM8SOTXKEema9Zj0X6zhUw" association="_YM8SHjXKEema9Zj0X6zhUw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SGzXKEema9Zj0X6zhUw"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26KhWLEem_cfaprD3REA" memberEnd="_kv26JxWLEem_cfaprD3REA _kv26KxWLEem_cfaprD3REA">
-    <ownedEnd xmi:id="_kv26KxWLEem_cfaprD3REA" visibility="public" type="_kv26JBWLEem_cfaprD3REA" association="_kv26KhWLEem_cfaprD3REA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SHDXKEema9Zj0X6zhUw" memberEnd="_YM8SGTXKEema9Zj0X6zhUw _YM8SHTXKEema9Zj0X6zhUw">
+    <ownedEnd xmi:id="_YM8SHTXKEema9Zj0X6zhUw" visibility="public" type="_YM8SFjXKEema9Zj0X6zhUw" association="_YM8SHDXKEema9Zj0X6zhUw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26LBWLEem_cfaprD3REA" memberEnd="_kv26KBWLEem_cfaprD3REA _kv26LRWLEem_cfaprD3REA">
-    <ownedEnd xmi:id="_kv26LRWLEem_cfaprD3REA" visibility="public" type="_kv26JBWLEem_cfaprD3REA" association="_kv26LBWLEem_cfaprD3REA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SHjXKEema9Zj0X6zhUw" memberEnd="_YM8SGjXKEema9Zj0X6zhUw _YM8SHzXKEema9Zj0X6zhUw">
+    <ownedEnd xmi:id="_YM8SHzXKEema9Zj0X6zhUw" visibility="public" type="_YM8SFjXKEema9Zj0X6zhUw" association="_YM8SHjXKEema9Zj0X6zhUw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26LhWLEem_cfaprD3REA" name="Element" isAbstract="true">
-    <ownedComment xmi:id="_kv26LxWLEem_cfaprD3REA">
+  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SIDXKEema9Zj0X6zhUw" name="Element" isAbstract="true">
+    <ownedComment xmi:id="_YM8SITXKEema9Zj0X6zhUw">
       <body>Abstract class</body>
     </ownedComment>
-    <generalization xmi:id="_kv26MBWLEem_cfaprD3REA" general="_kv26FBWLEem_cfaprD3REA"/>
-    <generalization xmi:id="_kv26MRWLEem_cfaprD3REA" general="_kv26IBWLEem_cfaprD3REA"/>
-    <ownedAttribute xmi:id="_kv26MhWLEem_cfaprD3REA" name="HasRepresentation" visibility="public" type="_kv26RhWLEem_cfaprD3REA" association="_kv26PRWLEem_cfaprD3REA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kv26MxWLEem_cfaprD3REA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26NBWLEem_cfaprD3REA"/>
+    <ownedAttribute xmi:id="_YM8SIjXKEema9Zj0X6zhUw" name="HasRepresentation" visibility="public" type="_YM8SNjXKEema9Zj0X6zhUw" association="_YM8SLjXKEema9Zj0X6zhUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SIzXKEema9Zj0X6zhUw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SJDXKEema9Zj0X6zhUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26NRWLEem_cfaprD3REA" name="PriorVersion" visibility="public" type="_kv26ShWLEem_cfaprD3REA" association="_kv26PhWLEem_cfaprD3REA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26NhWLEem_cfaprD3REA"/>
+    <ownedAttribute xmi:id="_YM8SJTXKEema9Zj0X6zhUw" name="PriorVersion" visibility="public" type="_YM8SOjXKEema9Zj0X6zhUw" association="_YM8SLzXKEema9Zj0X6zhUw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SJjXKEema9Zj0X6zhUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26NxWLEem_cfaprD3REA" name="NextVersion" visibility="public" type="_kv26ShWLEem_cfaprD3REA" association="_kv26PxWLEem_cfaprD3REA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26OBWLEem_cfaprD3REA"/>
+    <ownedAttribute xmi:id="_YM8SJzXKEema9Zj0X6zhUw" name="NextVersion" visibility="public" type="_YM8SOjXKEema9Zj0X6zhUw" association="_YM8SMDXKEema9Zj0X6zhUw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SKDXKEema9Zj0X6zhUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26ORWLEem_cfaprD3REA" name="PriorVariant" visibility="public" type="_kv26ThWLEem_cfaprD3REA" association="_kv26QBWLEem_cfaprD3REA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26OhWLEem_cfaprD3REA"/>
+    <ownedAttribute xmi:id="_YM8SKTXKEema9Zj0X6zhUw" name="Variant" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SMTXKEema9Zj0X6zhUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SKjXKEema9Zj0X6zhUw" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26OxWLEem_cfaprD3REA" name="NextVariant" visibility="public" type="_kv26ThWLEem_cfaprD3REA" association="_kv26QRWLEem_cfaprD3REA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kv26PBWLEem_cfaprD3REA"/>
+    <ownedAttribute xmi:id="_YM8SKzXKEema9Zj0X6zhUw" name="Variant" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SMTXKEema9Zj0X6zhUw">
+      <ownedComment xmi:id="_YM8SLDXKEema9Zj0X6zhUw">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SLTXKEema9Zj0X6zhUw" value="*"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26PRWLEem_cfaprD3REA" memberEnd="_kv26MhWLEem_cfaprD3REA _kv26RxWLEem_cfaprD3REA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26PhWLEem_cfaprD3REA" memberEnd="_kv26NRWLEem_cfaprD3REA _kv26SxWLEem_cfaprD3REA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26PxWLEem_cfaprD3REA" memberEnd="_kv26NxWLEem_cfaprD3REA _kv26TRWLEem_cfaprD3REA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26QBWLEem_cfaprD3REA" memberEnd="_kv26ORWLEem_cfaprD3REA _kv26URWLEem_cfaprD3REA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_kv26QRWLEem_cfaprD3REA" memberEnd="_kv26OxWLEem_cfaprD3REA _kv26TxWLEem_cfaprD3REA"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26QhWLEem_cfaprD3REA" name="URIRepresentation">
-    <ownedComment xmi:id="_kv26QxWLEem_cfaprD3REA">
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SLjXKEema9Zj0X6zhUw" memberEnd="_YM8SIjXKEema9Zj0X6zhUw _YM8SNzXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SLzXKEema9Zj0X6zhUw" memberEnd="_YM8SJTXKEema9Zj0X6zhUw _YM8SOzXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SMDXKEema9Zj0X6zhUw" memberEnd="_YM8SJzXKEema9Zj0X6zhUw _YM8SPTXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SMTXKEema9Zj0X6zhUw" memberEnd="_YM8SKTXKEema9Zj0X6zhUw _YM8SKzXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SMjXKEema9Zj0X6zhUw" name="URIRepresentation">
+    <ownedComment xmi:id="_YM8SMzXKEema9Zj0X6zhUw">
       <body>&lt;Enter note text here></body>
     </ownedComment>
-    <ownedComment xmi:id="_kv26RBWLEem_cfaprD3REA">
+    <ownedComment xmi:id="_YM8SNDXKEema9Zj0X6zhUw">
       <body>Pointing directly to resource</body>
     </ownedComment>
-    <generalization xmi:id="_kv26RRWLEem_cfaprD3REA" general="_kv26RhWLEem_cfaprD3REA"/>
+    <generalization xmi:id="_YM8SNTXKEema9Zj0X6zhUw" general="_YM8SNjXKEema9Zj0X6zhUw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26RhWLEem_cfaprD3REA" name="Representation" isAbstract="true">
-    <ownedAttribute xmi:id="_kv26RxWLEem_cfaprD3REA" name="RepresentsObject" visibility="public" type="_kv26LhWLEem_cfaprD3REA" association="_kv26PRWLEem_cfaprD3REA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SNjXKEema9Zj0X6zhUw" name="Representation" isAbstract="true">
+    <ownedAttribute xmi:id="_YM8SNzXKEema9Zj0X6zhUw" name="RepresentsElement" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SLjXKEema9Zj0X6zhUw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_kv26SBWLEem_cfaprD3REA" name="FilePath"/>
-  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_kv26SRWLEem_cfaprD3REA" name="GUID"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26ShWLEem_cfaprD3REA" name="Version">
-    <ownedAttribute xmi:id="_kv26SxWLEem_cfaprD3REA" name="NextElement" visibility="public" type="_kv26LhWLEem_cfaprD3REA" association="_kv26PhWLEem_cfaprD3REA">
-      <ownedComment xmi:id="_kv26TBWLEem_cfaprD3REA">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_YM8SODXKEema9Zj0X6zhUw" name="FilePath"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_YM8SOTXKEema9Zj0X6zhUw" name="GUID"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SOjXKEema9Zj0X6zhUw" name="Version">
+    <ownedAttribute xmi:id="_YM8SOzXKEema9Zj0X6zhUw" name="NextElement" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SLzXKEema9Zj0X6zhUw">
+      <ownedComment xmi:id="_YM8SPDXKEema9Zj0X6zhUw">
         <body>&lt;Enter note text here></body>
       </ownedComment>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26TRWLEem_cfaprD3REA" name="PriorElement" visibility="public" type="_kv26LhWLEem_cfaprD3REA" association="_kv26PxWLEem_cfaprD3REA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kv26ThWLEem_cfaprD3REA" name="Variant">
-    <ownedAttribute xmi:id="_kv26TxWLEem_cfaprD3REA" name="PriorElement" visibility="public" type="_kv26LhWLEem_cfaprD3REA" association="_kv26QRWLEem_cfaprD3REA">
-      <ownedComment xmi:id="_kv26UBWLEem_cfaprD3REA">
-        <body>&lt;Enter note text here></body>
-      </ownedComment>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_kv26URWLEem_cfaprD3REA" name="NextElement" visibility="public" type="_kv26LhWLEem_cfaprD3REA" association="_kv26QBWLEem_cfaprD3REA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kv26UhWLEem_cfaprD3REA" value="*"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_YM8SPTXKEema9Zj0X6zhUw" name="PriorElement" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SMDXKEema9Zj0X6zhUw"/>
   </packagedElement>
 </uml:Model>
