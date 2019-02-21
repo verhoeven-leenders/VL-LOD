@@ -4,7 +4,6 @@ Proof of concept for internal Linked Open Data implementation within the company
 The following ontologies will be used as a base for the data model:
 - [COINS](http://www.coinsweb.nl/wiki2/index.php/Welcome_to_the_COINS_wiki_pages)
 - ICDD ([Part 1](https://www.iso.org/standard/74389.html), [Part 2](https://www.iso.org/standard/74390.html))
-- [YACSER](https://www.infrabim.nl/) (Dutch)
 
 The application will most likely be built in Python using [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell).
 
