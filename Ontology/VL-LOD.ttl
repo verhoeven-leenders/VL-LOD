@@ -1,0 +1,138 @@
+# baseURI: http://sparql.verhoeven-leenders.nl/repositories/VL-LOD
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vl: <hhttp://sparql.verhoeven-leenders.nl/repositories/VL-LOD#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vl:Assembly
+  rdf:type owl:Class ;
+  rdfs:label "Assembly"@en ;
+  rdfs:subClassOf vl:Element ;
+.
+vl:Element
+  rdf:type owl:Class ;
+  rdfs:comment "A generic concept for model elements. An element is not necessarily restricted to physical elements but can also be logical elements, spatial elements, etc."@en ;
+  rdfs:label "Element"@en ;
+  rdfs:label "Element"@nl ;
+  rdfs:subClassOf owl:Thing ;
+.
+vl:FileRepresentation
+  rdf:type owl:Class ;
+  rdfs:label "FileRepresentation"@en ;
+  rdfs:subClassOf vl:Representation ;
+.
+vl:Part
+  rdf:type owl:Class ;
+  rdfs:label "Deel"@nl ;
+  rdfs:label "Part"@en ;
+  rdfs:subClassOf vl:Element ;
+.
+vl:Representation
+  rdf:type owl:Class ;
+  rdfs:label "Representatie (wanneer een representatie van een object in verschillende bestanden voorkomt)"@nl ;
+  rdfs:label "Representation "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty vl:representsElement ;
+    ] ;
+.
+vl:URIRepresenation
+  rdf:type owl:Class ;
+  rdfs:label "URIRepresentation"@en ;
+  rdfs:subClassOf vl:Representation ;
+.
+vl:Version
+  rdf:type owl:Class ;
+  rdfs:label "Versie"@nl ;
+  rdfs:label "Version"@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty vl:priorElement ;
+    ] ;
+.
+vl:author
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain vl:Version ;
+  rdfs:label "author"@en ;
+  rdfs:range xsd:string ;
+.
+vl:contains
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Assembly ;
+  rdfs:label "Contains"@en ;
+  rdfs:range vl:Assembly ;
+  rdfs:range vl:Part ;
+  owl:inverseOf vl:partOfAssembly ;
+.
+vl:description
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain vl:Version ;
+  rdfs:label "description of change"@en ;
+  rdfs:range xsd:string ;
+.
+vl:hasRepresentation
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Element ;
+  rdfs:label "has Representation"@en ;
+  rdfs:range vl:Representation ;
+  owl:inverseOf vl:representsElement ;
+.
+vl:hasVariant
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Element ;
+  rdfs:label "has Variant"@en ;
+  rdfs:range vl:Element ;
+.
+vl:nextElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Version ;
+  rdfs:label "Next Element"@en ;
+  rdfs:range vl:Element ;
+.
+vl:nextVersion
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Element ;
+  rdfs:label "Next Version"@en ;
+  rdfs:range vl:Version ;
+.
+vl:partOfAssembly
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Assembly ;
+  rdfs:domain vl:Part ;
+  rdfs:label "Part Of Assembly"@en ;
+  rdfs:range vl:Assembly ;
+.
+vl:priorElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Version ;
+  rdfs:label "Prior Element"@en ;
+  rdfs:range vl:Element ;
+  owl:inverseOf vl:nextVersion ;
+.
+vl:priorVersion
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Element ;
+  rdfs:label "Prior Version"@en ;
+  rdfs:range vl:Version ;
+  owl:inverseOf vl:nextElement ;
+.
+vl:representsElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain vl:Representation ;
+  rdfs:label "represents Element"@en ;
+  rdfs:range vl:Element ;
+  owl:inverseOf vl:hasRepresentation ;
+.
+vl:version_number
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain vl:Version ;
+  rdfs:label "version number "@en ;
+  rdfs:range xsd:integer ;
+.
