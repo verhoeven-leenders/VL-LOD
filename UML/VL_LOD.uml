@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_YM8SADXKEema9Zj0X6zhUw" name="vl_lod">
-  <eAnnotations xmi:id="_YM8SATXKEema9Zj0X6zhUw" source="Objing">
-    <contents xmi:type="uml:Property" xmi:id="_YM8SAjXKEema9Zj0X6zhUw" name="exporterVersion">
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_YM8SAzXKEema9Zj0X6zhUw" value="3.0.0"/>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_M066gDZyEemJUoRLRyKpdQ" name="vl_lod">
+  <eAnnotations xmi:id="_M066gTZyEemJUoRLRyKpdQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_M066gjZyEemJUoRLRyKpdQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_M066gzZyEemJUoRLRyKpdQ" value="3.0.0"/>
     </contents>
   </eAnnotations>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SBDXKEema9Zj0X6zhUw" name="Assembly">
-    <generalization xmi:id="_YM8SBTXKEema9Zj0X6zhUw" general="_YM8SIDXKEema9Zj0X6zhUw"/>
-    <ownedAttribute xmi:id="_YM8SBjXKEema9Zj0X6zhUw" name="Contains" visibility="public" type="_YM8SBDXKEema9Zj0X6zhUw" association="_YM8SDzXKEema9Zj0X6zhUw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SBzXKEema9Zj0X6zhUw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SCDXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M066hDZyEemJUoRLRyKpdQ" name="Assembly">
+    <generalization xmi:id="_M066hTZyEemJUoRLRyKpdQ" general="_M066oDZyEemJUoRLRyKpdQ"/>
+    <ownedAttribute xmi:id="_M066hjZyEemJUoRLRyKpdQ" name="Contains" visibility="public" type="_M066hDZyEemJUoRLRyKpdQ" association="_M066jzZyEemJUoRLRyKpdQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M066hzZyEemJUoRLRyKpdQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066iDZyEemJUoRLRyKpdQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YM8SCTXKEema9Zj0X6zhUw" name="PartOfAssembly" visibility="public" type="_YM8SBDXKEema9Zj0X6zhUw" association="_YM8SDzXKEema9Zj0X6zhUw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SCjXKEema9Zj0X6zhUw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SCzXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_M066iTZyEemJUoRLRyKpdQ" name="PartOfAssembly" visibility="public" type="_M066hDZyEemJUoRLRyKpdQ" association="_M066jzZyEemJUoRLRyKpdQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M066ijZyEemJUoRLRyKpdQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066izZyEemJUoRLRyKpdQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YM8SDDXKEema9Zj0X6zhUw" name="Contains" visibility="public" type="_YM8SETXKEema9Zj0X6zhUw" association="_YM8SEDXKEema9Zj0X6zhUw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SDTXKEema9Zj0X6zhUw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SDjXKEema9Zj0X6zhUw"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SDzXKEema9Zj0X6zhUw" memberEnd="_YM8SBjXKEema9Zj0X6zhUw _YM8SCTXKEema9Zj0X6zhUw"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SEDXKEema9Zj0X6zhUw" memberEnd="_YM8SDDXKEema9Zj0X6zhUw _YM8SEzXKEema9Zj0X6zhUw"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SETXKEema9Zj0X6zhUw" name="Part">
-    <generalization xmi:id="_YM8SEjXKEema9Zj0X6zhUw" general="_YM8SIDXKEema9Zj0X6zhUw"/>
-    <ownedAttribute xmi:id="_YM8SEzXKEema9Zj0X6zhUw" name="PartOfAssembly" visibility="public" type="_YM8SBDXKEema9Zj0X6zhUw" association="_YM8SEDXKEema9Zj0X6zhUw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SFDXKEema9Zj0X6zhUw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SFTXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_M066jDZyEemJUoRLRyKpdQ" name="Contains" visibility="public" type="_M066kTZyEemJUoRLRyKpdQ" association="_M066kDZyEemJUoRLRyKpdQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M066jTZyEemJUoRLRyKpdQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066jjZyEemJUoRLRyKpdQ"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SFjXKEema9Zj0X6zhUw" name="FileRepresentation">
-    <ownedComment xmi:id="_YM8SFzXKEema9Zj0X6zhUw">
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066jzZyEemJUoRLRyKpdQ" memberEnd="_M066hjZyEemJUoRLRyKpdQ _M066iTZyEemJUoRLRyKpdQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066kDZyEemJUoRLRyKpdQ" memberEnd="_M066jDZyEemJUoRLRyKpdQ _M066kzZyEemJUoRLRyKpdQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M066kTZyEemJUoRLRyKpdQ" name="Part">
+    <generalization xmi:id="_M066kjZyEemJUoRLRyKpdQ" general="_M066oDZyEemJUoRLRyKpdQ"/>
+    <ownedAttribute xmi:id="_M066kzZyEemJUoRLRyKpdQ" name="PartOfAssembly" visibility="public" type="_M066hDZyEemJUoRLRyKpdQ" association="_M066kDZyEemJUoRLRyKpdQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M066lDZyEemJUoRLRyKpdQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066lTZyEemJUoRLRyKpdQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M066ljZyEemJUoRLRyKpdQ" name="FileRepresentation">
+    <ownedComment xmi:id="_M066lzZyEemJUoRLRyKpdQ">
       <body>Test</body>
     </ownedComment>
-    <generalization xmi:id="_YM8SGDXKEema9Zj0X6zhUw" general="_YM8SNjXKEema9Zj0X6zhUw"/>
-    <ownedAttribute xmi:id="_YM8SGTXKEema9Zj0X6zhUw" name="filePath" visibility="public" type="_YM8SODXKEema9Zj0X6zhUw" association="_YM8SHDXKEema9Zj0X6zhUw"/>
-    <ownedAttribute xmi:id="_YM8SGjXKEema9Zj0X6zhUw" name="GUID" visibility="public" type="_YM8SOTXKEema9Zj0X6zhUw" association="_YM8SHjXKEema9Zj0X6zhUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SGzXKEema9Zj0X6zhUw"/>
+    <generalization xmi:id="_M066mDZyEemJUoRLRyKpdQ" general="_M066tjZyEemJUoRLRyKpdQ"/>
+    <ownedAttribute xmi:id="_M066mTZyEemJUoRLRyKpdQ" name="filePath" visibility="public" type="_M066uDZyEemJUoRLRyKpdQ" association="_M066nDZyEemJUoRLRyKpdQ"/>
+    <ownedAttribute xmi:id="_M066mjZyEemJUoRLRyKpdQ" name="GUID" visibility="public" type="_M066uTZyEemJUoRLRyKpdQ" association="_M066njZyEemJUoRLRyKpdQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066mzZyEemJUoRLRyKpdQ"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SHDXKEema9Zj0X6zhUw" memberEnd="_YM8SGTXKEema9Zj0X6zhUw _YM8SHTXKEema9Zj0X6zhUw">
-    <ownedEnd xmi:id="_YM8SHTXKEema9Zj0X6zhUw" visibility="public" type="_YM8SFjXKEema9Zj0X6zhUw" association="_YM8SHDXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066nDZyEemJUoRLRyKpdQ" memberEnd="_M066mTZyEemJUoRLRyKpdQ _M066nTZyEemJUoRLRyKpdQ">
+    <ownedEnd xmi:id="_M066nTZyEemJUoRLRyKpdQ" visibility="public" type="_M066ljZyEemJUoRLRyKpdQ" association="_M066nDZyEemJUoRLRyKpdQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SHjXKEema9Zj0X6zhUw" memberEnd="_YM8SGjXKEema9Zj0X6zhUw _YM8SHzXKEema9Zj0X6zhUw">
-    <ownedEnd xmi:id="_YM8SHzXKEema9Zj0X6zhUw" visibility="public" type="_YM8SFjXKEema9Zj0X6zhUw" association="_YM8SHjXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066njZyEemJUoRLRyKpdQ" memberEnd="_M066mjZyEemJUoRLRyKpdQ _M066nzZyEemJUoRLRyKpdQ">
+    <ownedEnd xmi:id="_M066nzZyEemJUoRLRyKpdQ" visibility="public" type="_M066ljZyEemJUoRLRyKpdQ" association="_M066njZyEemJUoRLRyKpdQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SIDXKEema9Zj0X6zhUw" name="Element" isAbstract="true">
-    <ownedComment xmi:id="_YM8SITXKEema9Zj0X6zhUw">
+  <packagedElement xmi:type="uml:Class" xmi:id="_M066oDZyEemJUoRLRyKpdQ" name="Element" isAbstract="true">
+    <ownedComment xmi:id="_M066oTZyEemJUoRLRyKpdQ">
       <body>Abstract class</body>
     </ownedComment>
-    <ownedAttribute xmi:id="_YM8SIjXKEema9Zj0X6zhUw" name="HasRepresentation" visibility="public" type="_YM8SNjXKEema9Zj0X6zhUw" association="_YM8SLjXKEema9Zj0X6zhUw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SIzXKEema9Zj0X6zhUw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SJDXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_M066ojZyEemJUoRLRyKpdQ" name="HasRepresentation" visibility="public" type="_M066tjZyEemJUoRLRyKpdQ" association="_M066rjZyEemJUoRLRyKpdQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M066ozZyEemJUoRLRyKpdQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066pDZyEemJUoRLRyKpdQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YM8SJTXKEema9Zj0X6zhUw" name="PriorVersion" visibility="public" type="_YM8SOjXKEema9Zj0X6zhUw" association="_YM8SLzXKEema9Zj0X6zhUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SJjXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_M066pTZyEemJUoRLRyKpdQ" name="PriorVersion" visibility="public" type="_M066ujZyEemJUoRLRyKpdQ" association="_M066rzZyEemJUoRLRyKpdQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066pjZyEemJUoRLRyKpdQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YM8SJzXKEema9Zj0X6zhUw" name="NextVersion" visibility="public" type="_YM8SOjXKEema9Zj0X6zhUw" association="_YM8SMDXKEema9Zj0X6zhUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM8SKDXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_M066pzZyEemJUoRLRyKpdQ" name="NextVersion" visibility="public" type="_M066ujZyEemJUoRLRyKpdQ" association="_M066sDZyEemJUoRLRyKpdQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M066qDZyEemJUoRLRyKpdQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YM8SKTXKEema9Zj0X6zhUw" name="Variant" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SMTXKEema9Zj0X6zhUw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SKjXKEema9Zj0X6zhUw" value="*"/>
+    <ownedAttribute xmi:id="_M066qTZyEemJUoRLRyKpdQ" name="hasVariant" visibility="public" type="_M066oDZyEemJUoRLRyKpdQ" association="_M066sTZyEemJUoRLRyKpdQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M066qjZyEemJUoRLRyKpdQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YM8SKzXKEema9Zj0X6zhUw" name="Variant" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SMTXKEema9Zj0X6zhUw">
-      <ownedComment xmi:id="_YM8SLDXKEema9Zj0X6zhUw">
+    <ownedAttribute xmi:id="_M066qzZyEemJUoRLRyKpdQ" name="hasVariant" visibility="public" type="_M066oDZyEemJUoRLRyKpdQ" association="_M066sTZyEemJUoRLRyKpdQ">
+      <ownedComment xmi:id="_M066rDZyEemJUoRLRyKpdQ">
         <body>&lt;Enter note text here></body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM8SLTXKEema9Zj0X6zhUw" value="*"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M066rTZyEemJUoRLRyKpdQ" value="*"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SLjXKEema9Zj0X6zhUw" memberEnd="_YM8SIjXKEema9Zj0X6zhUw _YM8SNzXKEema9Zj0X6zhUw"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SLzXKEema9Zj0X6zhUw" memberEnd="_YM8SJTXKEema9Zj0X6zhUw _YM8SOzXKEema9Zj0X6zhUw"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SMDXKEema9Zj0X6zhUw" memberEnd="_YM8SJzXKEema9Zj0X6zhUw _YM8SPTXKEema9Zj0X6zhUw"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YM8SMTXKEema9Zj0X6zhUw" memberEnd="_YM8SKTXKEema9Zj0X6zhUw _YM8SKzXKEema9Zj0X6zhUw"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SMjXKEema9Zj0X6zhUw" name="URIRepresentation">
-    <ownedComment xmi:id="_YM8SMzXKEema9Zj0X6zhUw">
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066rjZyEemJUoRLRyKpdQ" memberEnd="_M066ojZyEemJUoRLRyKpdQ _M066tzZyEemJUoRLRyKpdQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066rzZyEemJUoRLRyKpdQ" memberEnd="_M066pTZyEemJUoRLRyKpdQ _M066uzZyEemJUoRLRyKpdQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066sDZyEemJUoRLRyKpdQ" memberEnd="_M066pzZyEemJUoRLRyKpdQ _M066vTZyEemJUoRLRyKpdQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M066sTZyEemJUoRLRyKpdQ" memberEnd="_M066qTZyEemJUoRLRyKpdQ _M066qzZyEemJUoRLRyKpdQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M066sjZyEemJUoRLRyKpdQ" name="URIRepresentation">
+    <ownedComment xmi:id="_M066szZyEemJUoRLRyKpdQ">
       <body>&lt;Enter note text here></body>
     </ownedComment>
-    <ownedComment xmi:id="_YM8SNDXKEema9Zj0X6zhUw">
+    <ownedComment xmi:id="_M066tDZyEemJUoRLRyKpdQ">
       <body>Pointing directly to resource</body>
     </ownedComment>
-    <generalization xmi:id="_YM8SNTXKEema9Zj0X6zhUw" general="_YM8SNjXKEema9Zj0X6zhUw"/>
+    <generalization xmi:id="_M066tTZyEemJUoRLRyKpdQ" general="_M066tjZyEemJUoRLRyKpdQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SNjXKEema9Zj0X6zhUw" name="Representation" isAbstract="true">
-    <ownedAttribute xmi:id="_YM8SNzXKEema9Zj0X6zhUw" name="RepresentsElement" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SLjXKEema9Zj0X6zhUw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M066tjZyEemJUoRLRyKpdQ" name="Representation" isAbstract="true">
+    <ownedAttribute xmi:id="_M066tzZyEemJUoRLRyKpdQ" name="RepresentsElement" visibility="public" type="_M066oDZyEemJUoRLRyKpdQ" association="_M066rjZyEemJUoRLRyKpdQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_YM8SODXKEema9Zj0X6zhUw" name="FilePath"/>
-  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_YM8SOTXKEema9Zj0X6zhUw" name="GUID"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YM8SOjXKEema9Zj0X6zhUw" name="Version">
-    <ownedAttribute xmi:id="_YM8SOzXKEema9Zj0X6zhUw" name="NextElement" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SLzXKEema9Zj0X6zhUw">
-      <ownedComment xmi:id="_YM8SPDXKEema9Zj0X6zhUw">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_M066uDZyEemJUoRLRyKpdQ" name="FilePath"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_M066uTZyEemJUoRLRyKpdQ" name="GUID"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M066ujZyEemJUoRLRyKpdQ" name="Version">
+    <ownedAttribute xmi:id="_M066uzZyEemJUoRLRyKpdQ" name="NextElement" visibility="public" type="_M066oDZyEemJUoRLRyKpdQ" association="_M066rzZyEemJUoRLRyKpdQ">
+      <ownedComment xmi:id="_M066vDZyEemJUoRLRyKpdQ">
         <body>&lt;Enter note text here></body>
       </ownedComment>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YM8SPTXKEema9Zj0X6zhUw" name="PriorElement" visibility="public" type="_YM8SIDXKEema9Zj0X6zhUw" association="_YM8SMDXKEema9Zj0X6zhUw"/>
+    <ownedAttribute xmi:id="_M066vTZyEemJUoRLRyKpdQ" name="PriorElement" visibility="public" type="_M066oDZyEemJUoRLRyKpdQ" association="_M066sDZyEemJUoRLRyKpdQ"/>
   </packagedElement>
 </uml:Model>
