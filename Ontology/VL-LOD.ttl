@@ -12,6 +12,39 @@ vl:Assembly
   rdfs:label "Assembly"@en ;
   rdfs:subClassOf vl:Element ;
 .
+vl:Constructie1
+  rdf:type vl:Assembly ;
+  vl:contains vl:Kolom1 ;
+  vl:contains vl:Kolom2 ;
+  vl:contains vl:Ligger ;
+  rdfs:label "Constructie1 (A1)"@en ;
+.
+vl:Constructie2
+  rdf:type vl:Assembly ;
+  vl:contains vl:Kolom206 ;
+  vl:contains vl:Kolom208 ;
+  vl:contains vl:Ligger207 ;
+  vl:hasVariant vl:Constructie3 ;
+  rdfs:label "Constructie2"@en ;
+.
+vl:Constructie2_0
+  rdf:type vl:Assembly ;
+  vl:hasVariant vl:Constructie2_1 ;
+  rdfs:label "Constructie2_0"@en ;
+.
+vl:Constructie2_1
+  rdf:type vl:Assembly ;
+  vl:contains vl:Ligger305 ;
+  rdfs:label "Constructie2_1"@en ;
+.
+vl:Constructie3
+  rdf:type vl:Assembly ;
+  rdfs:label "Constructie3"@en ;
+.
+vl:Constructie4
+  rdf:type vl:Assembly ;
+  rdfs:label "Constructie3"@en ;
+.
 vl:Element
   rdf:type owl:Class ;
   rdfs:comment "A generic concept for model elements. An element is not necessarily restricted to physical elements but can also be logical elements, spatial elements, etc."@en ;
@@ -19,16 +52,76 @@ vl:Element
   rdfs:label "Element"@nl ;
   rdfs:subClassOf owl:Thing ;
 .
+vl:ExpiredElement
+  rdf:type owl:Class ;
+  rdfs:label "Versie als abstracte versie relatie van een element"@nl ;
+  rdfs:label "Version"@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty vl:nextVersion ;
+    ] ;
+.
 vl:FileRepresentation
   rdf:type owl:Class ;
   rdfs:label "FileRepresentation"@en ;
   rdfs:subClassOf vl:Representation ;
+.
+vl:IFCfile1234
+  rdf:type vl:FileRepresentation ;
+  vl:representsElement vl:Ligger ;
+  rdfs:label "IFCfile1234"@en ;
+.
+vl:Kolom1
+  rdf:type vl:Part ;
+  rdfs:label "Kolom1" ;
+.
+vl:Kolom2
+  rdf:type vl:Part ;
+  rdfs:label "Kolom2" ;
+.
+vl:Kolom206
+  rdf:type vl:Part ;
+  rdfs:label "Kolom206" ;
+.
+vl:Kolom208
+  rdf:type vl:Part ;
+  rdfs:label "Kolom208" ;
+.
+vl:Ligger
+  rdf:type vl:Part ;
+  vl:hasVariant vl:Ligger_Copy ;
+  rdfs:label "Ligger"@en ;
+.
+vl:Ligger207
+  rdf:type vl:Part ;
+  rdfs:label "Ligger207"@en ;
+.
+vl:Ligger305
+  rdf:type vl:Part ;
+  rdfs:label "Ligger305"@en ;
+.
+vl:Ligger_Copy
+  rdf:type vl:Assembly ;
+  vl:contains vl:Part1Ligger ;
+  vl:contains vl:Part2Ligger ;
+  vl:hasVariant vl:Ligger ;
+  rdfs:label "Ligger"@en ;
 .
 vl:Part
   rdf:type owl:Class ;
   rdfs:label "Deel"@nl ;
   rdfs:label "Part"@en ;
   rdfs:subClassOf vl:Element ;
+.
+vl:Part1Ligger
+  rdf:type vl:Part ;
+  rdfs:label "Part1Ligger" ;
+.
+vl:Part2Ligger
+  rdf:type vl:Part ;
+  rdfs:label "Part2Ligger" ;
 .
 vl:Representation
   rdf:type owl:Class ;
@@ -46,20 +139,14 @@ vl:URIRepresenation
   rdfs:label "URIRepresentation"@en ;
   rdfs:subClassOf vl:Representation ;
 .
-vl:Version
-  rdf:type owl:Class ;
-  rdfs:label "Versie"@nl ;
-  rdfs:label "Version"@en ;
-  rdfs:subClassOf owl:Thing ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:maxCardinality 1 ;
-      owl:onProperty vl:priorElement ;
-    ] ;
+vl:URIRepresenation_1
+  rdf:type vl:URIRepresenation ;
+  vl:representsElement vl:Ligger ;
+  rdfs:label "URIrep"@en ;
 .
 vl:author
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain vl:Version ;
+  rdfs:domain vl:ExpiredElement ;
   rdfs:label "author"@en ;
   rdfs:range xsd:string ;
 .
@@ -73,7 +160,7 @@ vl:contains
 .
 vl:description
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain vl:Version ;
+  rdfs:domain vl:ExpiredElement ;
   rdfs:label "description of change"@en ;
   rdfs:range xsd:string ;
 .
@@ -89,18 +176,13 @@ vl:hasVariant
   rdfs:domain vl:Element ;
   rdfs:label "has Variant"@en ;
   rdfs:range vl:Element ;
-.
-vl:nextElement
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain vl:Version ;
-  rdfs:label "Next Element"@en ;
-  rdfs:range vl:Element ;
+  owl:inverseOf vl:hasVariant ;
 .
 vl:nextVersion
   rdf:type owl:ObjectProperty ;
-  rdfs:domain vl:Element ;
+  rdfs:domain vl:ExpiredElement ;
   rdfs:label "Next Version"@en ;
-  rdfs:range vl:Version ;
+  rdfs:range vl:Element ;
 .
 vl:partOfAssembly
   rdf:type owl:ObjectProperty ;
@@ -109,19 +191,12 @@ vl:partOfAssembly
   rdfs:label "Part Of Assembly"@en ;
   rdfs:range vl:Assembly ;
 .
-vl:priorElement
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain vl:Version ;
-  rdfs:label "Prior Element"@en ;
-  rdfs:range vl:Element ;
-  owl:inverseOf vl:nextVersion ;
-.
 vl:priorVersion
   rdf:type owl:ObjectProperty ;
   rdfs:domain vl:Element ;
   rdfs:label "Prior Version"@en ;
-  rdfs:range vl:Version ;
-  owl:inverseOf vl:nextElement ;
+  rdfs:range vl:ExpiredElement ;
+  owl:inverseOf vl:nextVersion ;
 .
 vl:representsElement
   rdf:type owl:ObjectProperty ;
@@ -132,7 +207,7 @@ vl:representsElement
 .
 vl:version_number
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain vl:Version ;
+  rdfs:domain vl:ExpiredElement ;
   rdfs:label "version number "@en ;
   rdfs:range xsd:integer ;
 .
